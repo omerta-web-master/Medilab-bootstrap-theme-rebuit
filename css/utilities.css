@@ -1,0 +1,67 @@
+/* ========== Button classes =========== */
+.btn {
+   outline:none;
+   display: inline-block;
+   border: none;
+   padding: .6rem 1.2rem;
+   border-radius:20px;
+   font-size: var(--normal-font-size);
+   transition: transform .3s ease-in-out;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+.btn_dark {
+    background-color: var(--third-bg-color);
+    color: white;
+}
+
+.btn_light {
+    background-color: var(--second-bg-color);
+    color: var(--fourth-bg-color);
+}
+
+/* =================  Layout classe =================== */
+.container {
+    width: 100%;
+    max-width: 1300px;
+    margin: auto;
+    padding: 0px 1rem;
+}
+
+.flex_row {
+    display:flex;
+    flex-direction: row;
+}
+
+.flex_responsive {
+    display:flex;
+    flex-direction: row;
+}
+
+.flex_column {
+    display: flex;
+    flex-direction: column;
+}
+
+/* ================== Reusable classes ======================== */
+.section_title {
+    display: inline-block;
+    font-size: var(--biggest-font-size);
+    font-weight: 500;
+    position: relative;
+    border-bottom: 1px var(--fourth-bg-color) solid;
+    margin-bottom: 1rem;
+}
+
+.section_title + p {
+    margin-bottom: 2rem;
+}
+
+.modal_open {
+    overflow:hidden;
+}
+
+

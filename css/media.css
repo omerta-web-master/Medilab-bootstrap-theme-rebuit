@@ -1,0 +1,200 @@
+@media (max-width: 1080px) {
+    .testimonial_slide {
+        flex-basis: 100%;
+
+    }
+}
+
+@media (max-width:900px) {
+    /* ========== Main nav ============ */
+    .main_nav  {
+        display: none;
+    }
+
+    #menu_toggler {
+        display: block;
+    }
+
+    /* ============= Home cards =========== */
+    .home_cards .flex_responsive {
+        flex-direction: column;
+    }
+
+    .home_card:hover {
+        transform: translateY(5px);
+    }
+
+    /* ============= About us ============= */
+    .about_us.flex_responsive {
+        flex-direction: column;
+        padding: 0px 1rem;
+    }
+
+    /* ============== Gallery =============== */
+    .gallery_container {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    /* =========== Contact ============ */
+    .contact_data {
+        flex-direction: column;
+    }
+
+    .contact_data .flex_column {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+    
+
+@media (max-width:568px) {
+    :root {
+        /* ============= Font and typography ============== */
+        --body-font: "Poppins", sans-serif;
+        --biggest-font-size: 2.2rem;
+        --title-font-size: 3rem;
+        --h1-font-size: 1.5rem;
+        --h2-font-size: 1.3rem;
+        --h3-font-size: 1.1rem;
+        --normal-font-size: 1rem;
+        --small-font-size: 0.813rem;
+        --smaller-font-size: 0.75rem;
+    }
+
+    .flex_responsive {
+        flex-direction: column;
+    }
+
+    /* ======== Top header ======= */
+    .top_header {
+        font-size: var(--small-font-size);
+    }
+    .top_header .social_media {
+        display: none;
+    }
+
+    /* =========  Main header============ */
+    .main_nav {
+        display: none;
+    }
+
+    /* ===========  Home ============== */
+    .title {
+        
+    }
+    
+    /* ============ About us  ============= */
+    .about_us {
+        padding: 0px 1rem;
+    }
+
+    /* =========== Doctors ============ */
+    .about_card:hover {
+        transform: translateY(-10px);
+    }
+
+    /* =========== Appointment form ============ */
+    .appointment .container {
+        padding: 0px 3px;
+    }
+
+    .appointment_form .form_grid {
+        grid-gap: 1px;
+        grid-row-gap: 5px;
+        grid-template-columns: 1fr;
+    }
+
+    .appointment_form textarea {
+        grid-column: 1/2;
+    }
+
+    /* ================ Departments ================== */
+    .departments_menu ul{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-bottom: 2rem;
+    }
+
+    .departments_menu a {
+        border-right: none;
+        padding: .5px .2rem;
+    }
+
+    .departments_menu a.active {
+        border-right: none;
+        border-bottom: 3px var(--third-bg-color) solid;
+    }
+
+    .dep_data_item {
+        gap: 1rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* =============== Doctors =============== */
+    .doctors_grid {
+        grid-template-columns: 1fr;
+        align-items: none;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .doctor_item {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .doctors .container {
+        width: 100%;
+    }
+
+    .services_grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* ================ Questions ================= */
+    .question_item {
+        width: 99%;
+    }
+
+    /* ================== Contact ================== */
+
+    .contact_form  {
+        width: 97%;
+    }
+
+    .contact_form .form_grid {
+        grid-template-columns: 1fr;
+    }
+    .contact .form_grid input:nth-of-type(3) {
+        grid-column: 1/2;
+    }
+
+    .contact .form_grid textarea {
+        grid-column: 1/2;
+    }
+}
+
+@media (max-width:300px) {
+    :root {
+        /* ============= Font and typography ============== */
+        --body-font: "Poppins", sans-serif;
+        --biggest-font-size: 1.5rem;
+        --title-font-size: 2rem;
+        --h1-font-size: 1.3rem;
+        --h2-font-size: 1.2rem;
+        --h3-font-size: 1.1rem;
+        --normal-font-size: 0.8rem;
+        --small-font-size: 0.7rem;
+        --smaller-font-size: 0.5rem;
+    }
+    .top_header {
+        font-size: var(--smaller-font-size);
+    }
+    .main_header .btn {
+        display: none;
+    }
+}
